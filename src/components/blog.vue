@@ -3,15 +3,16 @@
   <h1>{{blog}}</h1>
  </div>
 </template>
+
 <script>
- export default{
-  name:'blog',
-  data (){
-   return{
-    title:'Blog'
-   }
-  }
- }
+    export default{
+     name: 'blog',
+     data () {
+     return {
+     title: 'blog'
+    }
+     }
+     }
 </script>
 <style scoped>
  

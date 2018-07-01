@@ -8,7 +8,7 @@
   name:'contact',
   data (){
    return{
-    title:'Contact'
+    title:'contact'
    }
   }
  }
