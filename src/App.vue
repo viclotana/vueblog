@@ -10,15 +10,15 @@
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
+     <li class="nav-item">
+       <router-link class="nav-link" to="/blog">Blog</router-link>
+     </li>
+     <li class="nav-item">
+       <router-link class="nav-link" to="/services">Services</router-link>
+     </li>
+     <li class="nav-item">
+       <router-link class="nav-link" to="/contact">contact</router-link>
+     </li>
     </ul>
   </div>
 </nav>
