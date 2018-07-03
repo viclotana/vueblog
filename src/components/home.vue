@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     showDetails () {
-      this.$router.push({name:'details'})
+      this.$router.push({name: 'details'})
     }
   }
 }
