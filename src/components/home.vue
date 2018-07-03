@@ -1,10 +1,10 @@
 <template>
  <div class='home'>
-  <h1>{{title}}</h1>
+  <h1 align="center">{{title}}</h1>
   <div class="row">
       <div class="col-md-4 col-lg4" v-for="(data,index) in shoes" :key="index">
         <img :src="data.image" class="img-fluid">
-         <h3>{{data.shoeName}}</h3>
+         <h3 @click="showDetails()">{{data.shoeName}}</h3>
       </div>
     </div>
  </div>
@@ -15,7 +15,7 @@ export default {
   name: 'home',
   data () {
     return {
-      title: 'Yeezy Products',
+      title: 'Yeezy 350 Products',
       shoes: [
         {
           shoeName: 'Solar Red',
@@ -49,8 +49,16 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    showDetails () {
+      this.$router.push({name:'details'})
+    }
   }
 }
 </script>
 <style scoped>
+  h1 {
+
+  }
 </style>
