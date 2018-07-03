@@ -15,7 +15,7 @@ export default {
   name: 'home',
   data () {
     return {
-      title: 'home',
+      title: 'Yeezy Products',
       shoes: [
         {
           shoeName: 'Solar Red',
