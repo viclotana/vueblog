@@ -41,6 +41,11 @@ export default {
           shoeName: 'Beluga Grey',
           image: require('../assets/yeezy5.jpg'),
           shoeId: 5
+        },
+        {
+          shoeName: 'Black Green',
+          image: require('../assets/yeezy6.jpg'),
+          shoeId: 6
         }
       ]
     }
