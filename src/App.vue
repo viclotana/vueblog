@@ -22,9 +22,11 @@
     </ul>
   </div>
 </nav>
+  <div class="container">
     <transition name="moveInUp">
       <router-view/>
     </transition>
+  </div>
   </div>
 </template>
 
@@ -35,4 +37,40 @@ export default {
 </script>
 
 <style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 0px;
+}
+.moveInUp-enter-active{
+  animation: fadeIn 1.8s ease-in;
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.4;
+  }
+  100%{
+    opacity: 0.9;
+  }
+}
+.moveInUp-leave-active{
+  animation: moveInUp .2s ease-in;
+}
+@keyframes moveInUp{
+ 0%{
+  transform: translateY(0);
+ }
+ 50%{
+   transform: translateY(-200px);
+}
+  100%{
+  transform: translateY(-400px);
+ }
+}
 </style>
