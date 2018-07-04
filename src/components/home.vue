@@ -1,6 +1,6 @@
 <template>
  <div class='home'>
-  <h1 align="center">{{title}}</h1>
+  <h1 class="text-primary text-center">{{title}}</h1>
   <div class="row">
       <div class="col-md-4 col-lg4" v-for="(data,index) in shoes" :key="index">
         <img :src="data.image" class="img-fluid">
