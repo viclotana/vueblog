@@ -67,10 +67,10 @@ export default {
   transform: translateY(0);
  }
  50%{
-   transform: translateY(-200px);
+   transform: translateY(-400px);
 }
   100%{
-  transform: translateY(-400px);
+  transform: translateY(-800px);
  }
 }
 </style>
