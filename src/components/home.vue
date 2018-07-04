@@ -51,7 +51,7 @@ export default {
     }
   },
   methods: {
-    showDetails () {
+    showDetails: function () {
       this.$router.push({name: 'details'})
     }
   }

@@ -28,6 +28,11 @@ export default new Router({
       path: '/services',
       name: 'services',
       component: services
+    },
+    {
+      path: '/details/shoeId',
+      name: 'details',
+      component: details
     }
   ]
 })
