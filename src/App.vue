@@ -22,7 +22,9 @@
     </ul>
   </div>
 </nav>
-    <router-view/>
+    <transition name="moveInUp">
+      <router-view/>
+    </transition>
   </div>
 </template>
 
