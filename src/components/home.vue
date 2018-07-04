@@ -4,7 +4,7 @@
   <div class="row">
       <div class="col-md-4 col-lg4" v-for="(data,index) in shoes" :key="index">
         <img :src="data.image" class="img-fluid">
-         <h3 @click="showDetails()">{{data.shoeName}}</h3>
+         <h3 @click="showDetails(data.sid)">{{data.shoeName}}</h3>
       </div>
     </div>
  </div>
@@ -20,42 +20,50 @@ export default {
         {
           shoeName: 'Solar Red',
           image: require('../assets/yeezy1.jpg'),
-          shoeId: 1
+          sid: 1
         },
         {
           shoeName: 'Black Red',
           image: require('../assets/yeezy2.jpg'),
-          shoeId: 2
+          sid: 2
         },
         {
           shoeName: 'Frozen Yellow',
           image: require('../assets/yeezy3.jpg'),
-          shoeId: 3
+          sid: 3
         },
         {
           shoeName: 'Zebra V2',
           image: require('../assets/yeezy4.jpg'),
-          shoeId: 4
+          sid: 4
         },
         {
           shoeName: 'Beluga Grey',
           image: require('../assets/yeezy5.jpg'),
-          shoeId: 5
+          sid: 5
         },
         {
           shoeName: 'Black Green',
           image: require('../assets/yeezy6.jpg'),
-          shoeId: 6
+          sid: 6
         }
       ]
     }
   },
   methods: {
-    showDetails: function () {
-      this.$router.push({name: 'details'})
+    showDetails: function (sheewId) {
+      let shoeId = sheewId;
+      this.$router.push({name: 'details',params:{idd:shoeId}})
     }
   }
 }
 </script>
 <style scoped>
+.row img{
+  max-height: 15em;
+  width: 100%;
+}
+.row h3{
+  cursor:pointer;
+}
 </style>

@@ -31,7 +31,7 @@ export default new Router({
       component: services
     },
     {
-      path: '/details/:Id',
+      path: '/details/:idd',
       name: 'details',
       component: details
     }
