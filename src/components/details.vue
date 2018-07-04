@@ -6,12 +6,12 @@
  </div>
 </template>
 <script>
- export default {
+export default {
   name: 'details',
   data () {
-   return {
-    title: "details"
-   }
+    return {
+      title: 'details'
+    }
   }
- }
+}
 </script>

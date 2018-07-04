@@ -4,6 +4,7 @@ import home from '@/components/home'
 import blog from '@/components/blog'
 import services from '@/components/services'
 import contact from '@/components/contact'
+import details from '@/components/details'
 
 Vue.use(Router)
 
@@ -30,7 +31,7 @@ export default new Router({
       component: services
     },
     {
-      path: '/details/shoeId',
+      path: '/details/:Id',
       name: 'details',
       component: details
     }
