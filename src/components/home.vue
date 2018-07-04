@@ -52,8 +52,8 @@ export default {
   },
   methods: {
     showDetails: function (sheewId) {
-      let shoeId = sheewId;
-      this.$router.push({name: 'details',params:{idd:shoeId}})
+      let shoeId = sheewId
+      this.$router.push({name: 'details', params: {idd: shoeId}})
     }
   }
 }

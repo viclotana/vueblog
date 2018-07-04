@@ -13,13 +13,13 @@
  </div>
 </template>
 <script>
- export default{
-  name:'details',
-  data(){
-   return{
-    shoeId:this.$route.params.idd,
-    title:"details",
-    shoes: [
+export default{
+  name: 'details',
+  data () {
+    return {
+      shoeId: this.$route.params.idd,
+      title: 'details',
+      shoes: [
         {
           shoeName: 'Solar Red',
           image: require('../assets/yeezy1.jpg'),
@@ -50,9 +50,8 @@
           image: require('../assets/yeezy6.jpg'),
           sid: 6
         }
-    ]
-     
-   }
+      ]
+    }
   }
- }
+}
 </script>
